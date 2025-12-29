@@ -1,0 +1,11 @@
+[package]
+name = "unzippoo"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.86"
+clap = { version = "4.5.18", features = ["derive"] }
+num_cpus = "1.16.0"
+rayon = "1.10.0"
+zip = { version = "0.6.6", default-features = false, features = ["aes-crypto", "deflate"] }
